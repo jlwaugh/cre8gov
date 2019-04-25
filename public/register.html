@@ -20,8 +20,8 @@
     </script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.css" />
-    <link href="jumbotron.css" rel="stylesheet">
+    <script src="node_modules/firebaseui/dist/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
     <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
@@ -47,8 +47,10 @@
       // The start method will wait until the DOM is loaded.
       ui.start('#firebaseui-auth-container', uiConfig);
     </script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.css" />
   </head>
-  <body>
+  <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">CRE8</a>
@@ -62,65 +64,32 @@
               <a class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/members.html">Members</a>
+              <a class="nav-link" href="#">Members</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Boroughs</a>
               <div class="dropdown-menu" aria-labelledby="dropdown07">
-                <a class="dropdown-item" href="/manhattan.html">Manhattan</a>
-                <a class="dropdown-item" href="/brooklyn.html">Brooklyn</a>
-                <a class="dropdown-item" href="/queens.html">Queens</a>
-                <a class="dropdown-item" href="/thebronx/html">The Bronx</a>
-                <a class="dropdown-item" href="/statenisland.html">Staten Island</a>
+                <a class="dropdown-item" href="/manhattan">Manhattan</a>
+                <a class="dropdown-item" href="/brooklyn">Brooklyn</a>
+                <a class="dropdown-item" href="/queens">Queens</a>
+                <a class="dropdown-item" href="/thebronx">The Bronx</a>
+                <a class="dropdown-item" href="/statenisland">Staten Island</a>
               </div>
             </li>
           </ul>
-          <form class="form-signin">
-            <a class="btn btn-primary btn-block" href=
-              "/login.html">Log in</a>
-        </form>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+	        <a class="btn btn-sm btn-outline-secondary" href="/login.html">Log In</a>
+	      </div>
         </div>
       </div>
     </nav>
-    <main role="main">
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Let's create!</h1>
-          <p>Bringing everyone together, starting in New York City.</p>
-          <p><a class="btn btn-primary btn-lg" href="./login.html" role="button">Get Started</a></p>
-        </div>
-      </div>
+    <h1 align="center" style="padding-top: 10px">Sign Up</h1>
 
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Events</h2>
-            <p>Attend various gatherings to share ideas and learn from others. Meeting people to discuss opportunities and enjoy camaraderie. Who is going to be there? When?</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Projects</h2>
-            <p>Discover initiatives and collaborate with fellow members of the city. Neighborhood participation is a responsibility. Everyone has a voice! Get involved and make a difference.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Media</h2>
-            <p>What kind of information will the city determine is valuable? How can we better understand our common goals? Where is attention being paid? Why do you love truth?</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
-
-    </main>
+    <div id="firebaseui-auth-container"></div>
 
     <footer class="container">
-      <p>&copy; CRE8 2019</p>
+      <p align="center">&copy; CRE8 2019</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "multidimensional",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlwaugh/cre8gov.git"
+  },
   "scripts": {
-    "start": "node app.js"
+    "start": "firebase serve"
   },
   "author": "James Waugh",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "firebase": "^5.10.0",
+    "firebaseui": "^3.6.0",
     "jquery": "^3.4.0",
     "popper.js": "^1.15.0"
   }
